@@ -5,7 +5,8 @@ import {
   Utensils, 
   ShieldCheck, 
   ArrowLeft,
-  CheckCircle2
+  CheckCircle2,
+  Globe
 } from 'lucide-react';
 
 const MESSAGES = {
@@ -153,15 +154,6 @@ const QUIZ_QUESTIONS = [
       { en: "2 to 6 months out.", es: "En 2 a 6 meses.", value: "researching" },
       { en: "No dates yet, just exploring.", es: "Sin fecha aún, solo explorando.", value: "wanderer" }
     ]
-  },
-  {
-    id: 6,
-    en: "Briefing Language?",
-    es: "¿Idioma de la guía?",
-    options: [
-      { en: "English", es: "Inglés", value: "en" },
-      { en: "Español", es: "Español", value: "es" }
-    ]
   }
 ];
 
@@ -221,10 +213,6 @@ export default function App() {
     if (step < QUIZ_QUESTIONS.length - 1) {
       setStep(step + 1);
     } else {
-      const selectedLang = newAnswers[5]?.value;
-      if (selectedLang && selectedLang !== lang) {
-        setLang(selectedLang);
-      }
       setView('result');
       window.scrollTo(0, 0);
     }
@@ -236,7 +224,7 @@ export default function App() {
       email, 
       tripMonth,
       track: result, 
-      language: answers[5]?.value || lang,
+      language: lang,
     });
     setSubmitted(true);
   };
@@ -250,8 +238,9 @@ export default function App() {
       </div>
       <button 
         onClick={() => setLang(lang === 'en' ? 'es' : 'en')}
-        className="text-xs font-bold tracking-tighter text-[#3C3A36] hover:underline cursor-pointer"
+        className="text-xs font-bold tracking-tighter text-[#3C3A36] hover:underline cursor-pointer flex items-center gap-1"
       >
+        <Globe size={14} />
         {lang === 'en' ? 'EN | ES' : 'ES | EN'}
       </button>
     </header>
