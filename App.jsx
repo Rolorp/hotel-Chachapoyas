@@ -6,7 +6,8 @@ import {
   ShieldCheck, 
   ArrowLeft,
   CheckCircle2,
-  Globe
+  Globe,
+  ChevronDown
 } from 'lucide-react';
 
 const MESSAGES = {
@@ -230,19 +231,25 @@ export default function App() {
   };
 
   const Header = () => (
-    <header className="flex justify-between items-center px-6 py-4 max-w-4xl mx-auto w-full">
-      <div className="flex items-center gap-2">
-        <span className="font-serif font-bold text-[#3C3A36] text-lg">Hotel Chachapoyas</span>
-        <div className="w-[1px] h-4 bg-gray-300 mx-1"></div>
-        <span className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">Asociado Casa Dina</span>
+    <header className="flex justify-between items-center px-4 md:px-6 py-4 max-w-4xl mx-auto w-full">
+      <div className="flex flex-col md:flex-row md:items-center gap-0.5 md:gap-2">
+        <span className="font-serif font-bold text-[#3C3A36] text-base md:text-lg leading-none">Hotel Chachapoyas</span>
+        <div className="hidden md:block w-[1px] h-4 bg-gray-300 mx-1"></div>
+        <span className="text-[9px] md:text-[10px] uppercase tracking-widest text-gray-500 font-medium leading-none">Asociado Casa Dina</span>
       </div>
-      <button 
-        onClick={() => setLang(lang === 'en' ? 'es' : 'en')}
-        className="text-xs font-bold tracking-tighter text-[#3C3A36] hover:underline cursor-pointer flex items-center gap-1"
-      >
-        <Globe size={14} />
-        {lang === 'en' ? 'EN | ES' : 'ES | EN'}
-      </button>
+      
+      <div className="relative flex items-center border border-stone-200 rounded-md bg-white hover:bg-stone-50 transition-colors shadow-sm ml-2">
+        <Globe size={14} className="absolute left-2 text-[#3C3A36] pointer-events-none" />
+        <select 
+          value={lang}
+          onChange={(e) => setLang(e.target.value)}
+          className="appearance-none bg-transparent pl-7 pr-6 py-1.5 text-xs font-bold text-[#3C3A36] cursor-pointer focus:outline-none"
+        >
+          <option value="en">ENG</option>
+          <option value="es">ESP</option>
+        </select>
+        <ChevronDown size={14} className="absolute right-1.5 text-[#3C3A36] pointer-events-none opacity-50" />
+      </div>
     </header>
   );
 
