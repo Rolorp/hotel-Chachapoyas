@@ -10,13 +10,13 @@ import {
 
 const MESSAGES = {
   en: {
-    pageTitle: "Is Chachapoyas for you? Free trip briefing | La Xalca Hotel, Chachapoyas",
-    metaDesc: "Take the free 90-second quiz and get a personalized 72-hour Chachapoyas briefing — local logistics, food, hikes, and safety from La Xalca Hotel, three blocks from the Plaza de Armas.",
+    pageTitle: "Is Chachapoyas for you? Free trip briefing | Hotel Chachapoyas, Chachapoyas",
+    metaDesc: "Take the free 90-second quiz and get a personalized 72-hour Chachapoyas briefing — local logistics, food, hikes, and safety from Hotel Chachapoyas, three blocks from the Plaza de Armas.",
     title: "Is Chachapoyas for you?",
     subtitle: "Take the 90-second quiz. Get a trip briefing written by people who live three blocks from the Plaza de Armas.",
     microcopy: "Bilingual · Free PDF + future video series · We email about once a month · GDPR-clean.",
     cta_start: "Start the quiz",
-    partnership: "Local guide by La Xalca Hotel. Stay reliability by Casa Andina.",
+    partnership: "Local guide by Hotel Chachapoyas. Stay reliability by Casa Dina.",
     reviews: [
       "\"The most beautiful courtyard in Chachapoyas. Felt like home.\"",
       "\"Steps from the Plaza, but perfectly quiet. The staff knows every trail.\"",
@@ -28,7 +28,7 @@ const MESSAGES = {
       { icon: 'food', text: "Food + workspace map (depends on your track)" },
       { icon: 'safety', text: "Safety + nighttime intel for solo travelers" }
     ],
-    footer: "Jr. Grau 940, Chachapoyas 01001, Perú · reservas@laxalcahotel.com",
+    footer: "Jr. Grau 940, Chachapoyas 01001, Perú · reservas@hotelchachapoyas.com",
     gdpr_footer: "GDPR · We email about once a month · Unsubscribe in one click.",
     quiz_progress: "Question",
     quiz_next: "Next",
@@ -50,17 +50,17 @@ const MESSAGES = {
     form_placeholder: "your@email.com",
     form_button: "Send me my briefing",
     form_success: "Check your inbox. Your briefing is on its way.",
-    form_consent: "By submitting you agree to receive about one email per month from La Xalca Hotel. Unsubscribe any time.",
-    hero_alt: "The central courtyard of La Xalca Hotel at golden hour, three blocks from the Plaza de Armas in Chachapoyas."
+    form_consent: "By submitting you agree to receive about one email per month from Hotel Chachapoyas. Unsubscribe any time.",
+    hero_alt: "The central courtyard of Hotel Chachapoyas at golden hour, three blocks from the Plaza de Armas in Chachapoyas."
   },
   es: {
-    pageTitle: "¿Chachapoyas es para ti? Guía de viaje gratis | Hotel La Xalca, Chachapoyas",
-    metaDesc: "Haz el quiz gratuito de 90 segundos y recibe una guía personalizada de 72 horas en Chachapoyas — logística local, comida, caminatas y seguridad por Hotel La Xalca, a tres cuadras de la Plaza de Armas.",
+    pageTitle: "¿Chachapoyas es para ti? Guía de viaje gratis | Hotel Chachapoyas, Chachapoyas",
+    metaDesc: "Haz el quiz gratuito de 90 segundos y recibe una guía personalizada de 72 horas en Chachapoyas — logística local, comida, caminatas y seguridad por Hotel Chachapoyas, a tres cuadras de la Plaza de Armas.",
     title: "¿Chachapoyas es para ti?",
     subtitle: "Haz el quiz de 90 segundos. Recibe una guía de viaje escrita por gente que vive a tres cuadras de la Plaza de Armas.",
     microcopy: "Bilingüe · PDF gratuito + futura serie de video · Te escribimos una vez al mes · Cumple con el RGPD.",
     cta_start: "Empezar el quiz",
-    partnership: "Guía local por Hotel La Xalca. Estadía confiable por Casa Andina.",
+    partnership: "Guía local por Hotel Chachapoyas. Estadía confiable por Casa Dina.",
     reviews: [
       "\"El patio más hermoso de Chachapoyas. Se siente como en casa.\"",
       "\"A pasos de la Plaza, pero perfectamente silencioso. El staff conoce cada ruta.\"",
@@ -72,7 +72,7 @@ const MESSAGES = {
       { icon: 'food', text: "Mapa de comida + espacios de trabajo (según tu perfil)" },
       { icon: 'safety', text: "Información de seguridad nocturna para viajeros solos" }
     ],
-    footer: "Jr. Grau 940, Chachapoyas 01001, Perú · reservas@laxalcahotel.com",
+    footer: "Jr. Grau 940, Chachapoyas 01001, Perú · reservas@hotelchachapoyas.com",
     gdpr_footer: "RGPD · Te escribimos una vez al mes · Descríbete en un clic.",
     quiz_progress: "Pregunta",
     quiz_next: "Siguiente",
@@ -94,8 +94,8 @@ const MESSAGES = {
     form_placeholder: "tu@email.com",
     form_button: "Envíame mi guía",
     form_success: "Revisa tu bandeja. Tu guía va en camino.",
-    form_consent: "Al enviar aceptas recibir un correo mensual de Hotel La Xalca. Descríbete cuando quieras.",
-    hero_alt: "El patio central del Hotel La Xalca al atardecer, a tres cuadras de la Plaza de Armas en Chachapoyas."
+    form_consent: "Al enviar aceptas recibir un correo mensual de Hotel Chachapoyas. Descríbete cuando quieras.",
+    hero_alt: "El patio central del Hotel Chachapoyas al atardecer, a tres cuadras de la Plaza de Armas en Chachapoyas."
   }
 };
 
@@ -244,9 +244,9 @@ export default function App() {
   const Header = () => (
     <header className="flex justify-between items-center px-6 py-4 max-w-4xl mx-auto w-full">
       <div className="flex items-center gap-2">
-        <span className="font-serif font-bold text-[#3C3A36] text-lg">La Xalca Hotel</span>
+        <span className="font-serif font-bold text-[#3C3A36] text-lg">Hotel Chachapoyas</span>
         <div className="w-[1px] h-4 bg-gray-300 mx-1"></div>
-        <span className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">Asociado Casa Andina</span>
+        <span className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">Asociado Casa Dina</span>
       </div>
       <button 
         onClick={() => setLang(lang === 'en' ? 'es' : 'en')}
@@ -264,7 +264,7 @@ export default function App() {
           {t.partnership}
         </p>
         <div className="flex items-center gap-2 opacity-70 grayscale">
-          <div className="bg-stone-400 text-white text-[10px] px-2 py-1 font-bold rounded" role="img" aria-label="Casa Andina Logo">CASA ANDINA</div>
+          <div className="bg-stone-400 text-white text-[10px] px-2 py-1 font-bold rounded" role="img" aria-label="Casa Dina Logo">CASA DINA</div>
         </div>
       </div>
     </div>
@@ -384,7 +384,7 @@ export default function App() {
                   {lang === 'en' ? 'While you wait — meet Chachapoyas in 60 seconds:' : 'Mientras esperas — conoce Chachapoyas en 60 segundos:'}
                 </p>
                 <a 
-                  href="https://youtube.com/@laxalcahotel" 
+                  href="https://youtube.com/@hotelchachapoyas" 
                   className="text-[#1F4E5F] font-bold border-b-2 border-[#1F4E5F] pb-1 hover:text-[#163a47]"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -465,7 +465,7 @@ export default function App() {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 opacity-40 grayscale">
             <span className="font-bold tracking-widest text-sm" role="img" aria-label="PromPeru Logo">PROMPERÚ</span>
-            <span className="font-bold tracking-widest text-sm" role="img" aria-label="Casa Andina Logo">CASA ANDINA</span>
+            <span className="font-bold tracking-widest text-sm" role="img" aria-label="Casa Dina Logo">CASA DINA</span>
         </div>
       </section>
 
@@ -474,8 +474,8 @@ export default function App() {
           {t.footer}
         </p>
         <div className="flex justify-center gap-6 text-xs font-bold text-stone-600">
-          <a href="mailto:reservas@laxalcahotel.com" className="hover:text-[#B85C3D]">Email</a>
-          <a href="https://laxalcahotel.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#B85C3D]">laxalcahotel.com</a>
+          <a href="mailto:reservas@hotelchachapoyas.com" className="hover:text-[#B85C3D]">Email</a>
+          <a href="https://hotelchachapoyas.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#B85C3D]">hotelchachapoyas.com</a>
         </div>
         <p className="mt-8 text-[10px] text-stone-400">
           {t.gdpr_footer}
