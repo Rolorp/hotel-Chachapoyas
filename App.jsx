@@ -47,7 +47,7 @@ const MESSAGES = {
       working: "You need to stay connected while you explore. Your briefing maps the best desks and quietest coffee corners."
     },
     form_label_email: "Where should we send your briefing?",
-    form_label_month: "Trip month",
+    form_label_month: "When are you traveling?",
     form_placeholder: "your@email.com",
     form_button: "Send me my briefing",
     form_success: "Check your inbox. Your briefing is on its way.",
@@ -91,7 +91,7 @@ const MESSAGES = {
       working: "Necesitas estar conectado mientras exploras. Tu guía mapea los mejores escritorios y rincones tranquilos."
     },
     form_label_email: "¿A dónde enviamos tu guía?",
-    form_label_month: "Mes del viaje",
+    form_label_month: "¿Cuándo planeas viajar?",
     form_placeholder: "tu@email.com",
     form_button: "Envíame mi guía",
     form_success: "Revisa tu bandeja. Tu guía va en camino.",
