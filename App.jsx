@@ -232,10 +232,10 @@ export default function App() {
 
   const Header = () => (
     <header className="flex justify-between items-center px-4 md:px-6 py-4 max-w-4xl mx-auto w-full">
-      <div className="flex flex-col md:flex-row md:items-center gap-0.5 md:gap-2">
-        <span className="font-serif font-bold text-[#3C3A36] text-base md:text-lg leading-none">Hotel Chachapoyas</span>
+      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+        <span className="font-serif font-bold text-[#3C3A36] text-lg md:text-xl leading-none">Hotel Chachapoyas</span>
         <div className="hidden md:block w-[1px] h-4 bg-gray-300 mx-1"></div>
-        <span className="text-[9px] md:text-[10px] uppercase tracking-widest text-gray-500 font-medium leading-none">Asociado Casa Dina</span>
+        <span className="text-[11px] md:text-xs uppercase tracking-widest text-gray-500 font-medium leading-none">Asociado Casa Dina</span>
       </div>
       
       <div className="relative flex items-center border border-stone-200 rounded-md bg-white hover:bg-stone-50 transition-colors shadow-sm ml-2">
